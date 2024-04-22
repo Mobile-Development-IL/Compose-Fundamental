@@ -1,6 +1,12 @@
 <p align="center"><img align="center" src="https://raw.githubusercontent.com/Mobile-Development-IL/Assets/main/Resources/Mobile-Dev-IL.png" alt="Becipes Logo"/></p>
 <hr>
 
+# Compose-Fundamental
+This is the source code in the Jetpack Compose Fundamental Material. There is some learning material content :
+- Basic Layout
+- Modifier
+- Components
+
 ## Requirements
 To build and run this project, ensure you have the following software installed:
 
