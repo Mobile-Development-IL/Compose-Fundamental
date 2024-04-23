@@ -9,7 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 
 @Composable
 fun ActionLogin(modifier: Modifier = Modifier) {
@@ -26,7 +26,7 @@ fun ActionLogin(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 private fun ActionLoginPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ActionLogin(modifier = Modifier.padding(16.dp))
     }
 }

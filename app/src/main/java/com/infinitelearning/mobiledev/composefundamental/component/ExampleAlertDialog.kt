@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 
 @Composable
 fun ExampleAlertDialog(modifier: Modifier = Modifier) {
@@ -43,7 +43,7 @@ fun ExampleAlertDialog(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 private fun ExampleAlertButtonPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ExampleAlertDialog()
     }
 }

@@ -20,7 +20,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.infinitelearning.mobiledev.composefundamental.R
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 
 @Composable
 fun ExampleDialog(
@@ -69,7 +69,7 @@ fun ExampleDialog(
 @Preview(showBackground = true)
 @Composable
 private fun ExampleDialogPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ExampleDialog(onDismissRequest = {}, onConfirm = {})
     }
 }

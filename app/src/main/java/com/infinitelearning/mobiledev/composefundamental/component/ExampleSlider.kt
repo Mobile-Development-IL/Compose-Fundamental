@@ -10,7 +10,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 
 @Composable
 fun ExampleSlider(modifier: Modifier = Modifier) {
@@ -28,7 +28,7 @@ fun ExampleSlider(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 private fun ExampleSliderPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ExampleSlider()
     }
 }
