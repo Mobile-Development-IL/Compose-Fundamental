@@ -8,8 +8,10 @@ import androidx.compose.material.icons.filled.Face
 import androidx.compose.material3.ExtendedFloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
+import androidx.compose.material3.SnackbarResult
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -37,13 +39,32 @@ fun ExampleSnackbar(modifier: Modifier = Modifier) {
                 text = {
                     Text(text = "Kangen")
                 },
-                onClick = { scope.launch {
-                    snackbarHostState.showSnackbar("Ya, Aku kangen kamu!")
-                } },
+                onClick = {
+                    scope.launch {
+                        val result = snackbarHostState
+                            .showSnackbar(
+                                message = "Ya, Aku kangen kamu!",
+                                actionLabel = "Aku Tidak!",
+                                duration = SnackbarDuration.Short
+                            )
+                        when (result) {
+                            SnackbarResult.ActionPerformed -> {
+                                // Do Something
+                            }
+                            SnackbarResult.Dismissed -> {
+                                // Do Something
+                            }
+                        }
+                    }
+                },
             )
         }
     ) {
-        Box(contentAlignment = Alignment.Center, modifier = modifier.fillMaxSize().padding(it)) {
+        Box(
+            contentAlignment = Alignment.Center, modifier = modifier
+                .fillMaxSize()
+                .padding(it)
+        ) {
             Text(text = "Apakah kamu kangen aku?")
         }
     }
