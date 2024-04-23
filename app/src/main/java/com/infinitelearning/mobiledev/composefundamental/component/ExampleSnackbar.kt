@@ -17,7 +17,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 import kotlinx.coroutines.launch
 
 @Composable
@@ -52,7 +52,7 @@ fun ExampleSnackbar(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 private fun ExampleSnackbarPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ExampleSnackbar()
     }
 }

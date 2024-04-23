@@ -40,13 +40,13 @@ import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            FirstAppTheme {
+            ComposeFundamentalTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
@@ -114,7 +114,7 @@ fun ContactCard(
 @Preview(showBackground = true)
 @Composable
 private fun ContactCardPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ContactCard()
     }
 }
@@ -139,7 +139,7 @@ fun ContactCards(
 @Preview(showBackground = true)
 @Composable
 private fun ContactCardsPreview() {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ContactCards()
     }
 }

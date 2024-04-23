@@ -15,7 +15,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.infinitelearning.mobiledev.composefundamental.ui.theme.FirstAppTheme
+import com.infinitelearning.mobiledev.composefundamental.ui.theme.ComposeFundamentalTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -41,7 +41,7 @@ fun ChipExample(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 private fun ChipExamplePreview(modifier: Modifier = Modifier) {
-    FirstAppTheme {
+    ComposeFundamentalTheme {
         ChipExample()
     }
 }
