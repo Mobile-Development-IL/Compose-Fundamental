@@ -1,4 +1,4 @@
-<p align="center"><img align="center" src="https://raw.githubusercontent.com/Mobile-Development-IL/Assets/main/Resources/Mobile-Dev-IL.png" alt="Becipes Logo"/></p>
+<p align="center"><img align="center" src="https://raw.githubusercontent.com/Mobile-Development-IL/Assets/main/Resources/Mobile-Dev-IL.png" alt="Mobile Development IL Logo"/></p>
 <hr>
 
 # Compose-Fundamental
